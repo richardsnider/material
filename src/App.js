@@ -1,18 +1,44 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
-    return html({
+    let header = html({
+      type: 'header',
+      className: 'App-header',
       children: [
-        'laaaa',
-        {
-          children: 'weeee'
-        },
-        {
+        html({
+          type: 'img',
+          src: logo,
+          className: 'App-logo',
+        }),
+        html({
+          type: 'h1',
+          className: 'App-title',
           children: 'Welcome to React'
-        }
+        })
+      ]
+    });
+
+    let paragraph = html({
+      type: 'p',
+      className: 'App-intro',
+      children: [
+        `To get started, edit `,
+        html({
+          type: 'code',
+          children: 'src/App.js'
+        }),
+        ' and save to reload'
+      ]
+    })
+
+    return html({
+      className: `App`,
+      children: [
+        header,
+        paragraph
       ]
     });
 
@@ -24,10 +50,6 @@ class App extends Component {
     //     </header>
     //     <p className="App-intro">
     //       To get started, edit <code>src/App.js</code> and save to reload.
-    //       {
-    //         div2({
-    //         content: 'yooo'
-    //       })
     //     }
     //     </p>
     //   </div>
@@ -44,23 +66,11 @@ const html = (htmlObject) => {
 
   let props = Object.assign(htmlObject) || null;
 
-  children = !Array.isArray(children) && typeof children !== 'string' ?
-    [children] : children;
-
-  if (Array.isArray(children)) {
-    children.forEach(child => {
-      if (typeof child === 'object') {
-        // children = html(child);
-        children = html(child);
-      }
-    });
-  }
-
   return React.createElement(
     type,
     props,
     children
   );
-};
+}
 
 export default App;
