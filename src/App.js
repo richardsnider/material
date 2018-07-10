@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { StyleSheet, css } from 'aphrodite';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Reaaaaact</h1>
+      <div className={css(styles.app)}>
+        <header className={css(styles.appHeader)}>
+          <img src={logo} className={css(styles.appLogo)} alt="logo" />
+          <h1 className={css(styles.appTitle)}>Welcome to Reaaaaact</h1>
         </header>
-        <p className="App-intro">
+        <p className={css(styles.appIntro)}>
           To get started, edit <code>src/App.js</code> and save to reload.
         }
         </p>
@@ -18,5 +19,27 @@ class App extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  app: {
+    textAlign: 'center'
+  },
+  appLogo: {
+    animation: 'App-logo-spin infinite 20s linear',
+    height: '80px'
+  },
+  appHeader: {
+    backgroundColor: '#222',
+    height: '150px',
+    padding: '20px',
+    color: '#EEE',
+  },
+  appTitle: {
+    fontSize: '1.5em'
+  },
+  appIntro: {
+    fontSize: 'large'
+  }
+});
 
 export default App;
