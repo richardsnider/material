@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import { StyleSheet, css } from 'aphrodite';
 
 class App extends Component {
@@ -39,6 +38,10 @@ const styles = StyleSheet.create({
   },
   appIntro: {
     fontSize: 'large'
+  },
+  '@keyframes App-logo-spin': {
+    from: '{ transform: rotate(0deg); }',
+    to: '{ transform: rotate(360deg); }'
   }
 });
 
