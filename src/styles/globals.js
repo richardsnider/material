@@ -14,11 +14,15 @@ const styles = extended.StyleSheet.create({
     body: {
         margin: 0,
         padding: 0,
+        backgroundColor: '#111',
         fontFamily: 'sans-serif'
     },
-    // '*': {
-    //   ...
-    // },
+    div: {
+      color: '#BBB'
+    },
+    '*': {
+      fontWeight: 500 
+    },
     // 'p, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd': {
     //   ...
     // },
