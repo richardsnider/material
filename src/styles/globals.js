@@ -15,13 +15,13 @@ const styles = extended.StyleSheet.create({
         margin: 0,
         padding: 0,
         backgroundColor: '#111',
-        fontFamily: 'sans-serif'
     },
     div: {
       color: '#BBB'
     },
     '*': {
-      fontWeight: 500 
+      fontWeight: 500,
+      fontFamily: 'Courier New'
     },
     // 'p, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd': {
     //   ...

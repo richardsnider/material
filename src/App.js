@@ -6,8 +6,8 @@ class App extends Component {
     return (
       <div>
         <div className={css(styles.container)}>
-          <div className={css(styles.item)}>XXXXXXXXXXX</div>
-          <div className={css(styles.item)}>XXXXXXXXXXX</div>
+          <div className={css(styles.item)}>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</div>
+          <div className={css(styles.item)}><br/>XXXXXXXXXXX<br/><br/></div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
@@ -28,7 +28,7 @@ class App extends Component {
           <div className={css(styles.item, styles.blue)}>XXXXXXXXXXX</div>
           <div className={css(styles.item, styles.red, styles.tall)}>XXXXXXXXXXX</div>
           <div className={css(styles.item, styles.grey)}>XXXXXXXXXXX</div>
-          <div className={css(styles.item)}>XXXXXXXXXXX</div>
+          <div className={css(styles.item, styles.black)}>XXXXXXXXXXX</div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
           <div className={css(styles.item)}>XXXXXXXXXXX</div>
@@ -69,6 +69,9 @@ const styles = StyleSheet.create({
     ':hover': {
       backgroundColor: '#222'
   }
+  },
+  black: {
+    color: '#000'
   },
   grey: {
     color: '#888'
