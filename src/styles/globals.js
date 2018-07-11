@@ -17,7 +17,7 @@ const styles = extended.StyleSheet.create({
         backgroundColor: '#111',
     },
     div: {
-      color: '#BBB'
+      color: '#ccc'
     },
     '*': {
       fontWeight: 500,
