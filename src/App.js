@@ -77,13 +77,13 @@ const styles = StyleSheet.create({
     color: '#888'
   },
   green: {
-    color: '#8B8'
+    color: '#8f8'
   },
   blue: {
-    color: '#88B'
+    color: '#88f'
   },
   red: {
-    color: '#B88'
+    color: '#f88'
   },
   tall: {
     height: '80px'
