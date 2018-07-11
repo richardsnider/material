@@ -38,10 +38,6 @@ const styles = StyleSheet.create({
   },
   appIntro: {
     fontSize: 'large'
-  },
-  '@keyframes App-logo-spin': {
-    from: '{ transform: rotate(0deg); }',
-    to: '{ transform: rotate(360deg); }'
   }
 });
 
