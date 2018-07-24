@@ -21,7 +21,8 @@ const styles = extended.StyleSheet.create({
     },
     '*': {
       fontWeight: 500,
-      fontFamily: 'Courier New'
+      fontFamily: 'Courier New',
+      lineHeight: '20px'
     },
     // 'p, h1, h2, h3, h4, h5, h6, ul, dl, dt, dd': {
     //   ...
