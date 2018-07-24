@@ -46,6 +46,10 @@ export const baseStyle = StyleSheet.create({
             backgroundColor: '#222'
         }
     },
+    smallBox: {
+        height: '100px',
+        width: '100px',
+    },
     black: {
         color: color.black
     },
